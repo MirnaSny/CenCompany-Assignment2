@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">CenCompany-Assignment2</string>
+
+    <string-array name="Apple">
+        <item> iPhone 15</item>
+        <item> iPhone 15 Max</item>
+        <item> iPhone 15 Pro</item>
+    </string-array>
+
+
+    <string-array name="Samsung">
+        <item> Galaxy S23</item>
+        <item> Galaxy S23 Ultra</item>
+        <item> Galaxy Z</item>
+    </string-array>
+
+    <string-array name="Pixel">
+        <item> Google Pixel 6</item>
+        <item> Google Pixel 6 Pro</item>
+        <item> Google Pixel 6a</item>
+    </string-array>
+
+    <string-array name="Oppo">
+        <item> Oppo Find X5</item>
+        <item> Oppo Find X5 Pro</item>
+        <item> Oppo Find X3</item>
+    </string-array>
 </resources>
