@@ -26,23 +26,67 @@ public class Phones extends AppCompatActivity {
             String[] appleData = getResources().getStringArray(R.array.Apple);
             ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, appleData);
             listViewPhones.setAdapter(adapter);
+
+            listViewPhones.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                    Intent intent =new Intent(Phones.this,Apple.class);
+                    intent.putExtra("phone_model",appleData[position]);
+                    startActivity(intent);
+                }
+            });
+
         } else if (deviceType.equals("Samsung")) {
             String[] samsungData = getResources().getStringArray(R.array.Samsung);
             ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, samsungData);
             listViewPhones.setAdapter(adapter);
 
+            listViewPhones.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    Intent intent = new Intent(Phones.this, Samsung.class);
+                    intent.putExtra("phone_model", samsungData[position]);
+                    startActivity(intent);
+                }
+            });
+
+
         } else if (deviceType.equals("Pixel")) {
             String[] pixelData = getResources().getStringArray(R.array.Pixel);
             ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, pixelData);
             listViewPhones.setAdapter(adapter);
+
+            listViewPhones.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+                @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(Phones.this, Pixel.class);
+                intent.putExtra("phone_model", pixelData[position]);
+                startActivity(intent);
+            }
+        });
+
+
+
         } else if (deviceType.equals("Oppo")) {
             String[] oppoData = getResources().getStringArray(R.array.Oppo);
             ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, oppoData);
             listViewPhones.setAdapter(adapter);
 
+            listViewPhones.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    Intent intent = new Intent(Phones.this, Oppo.class);
+                    intent.putExtra("phone_model", oppoData[position]);
+                    startActivity(intent);
+                }
+            });
+
         }else {
 
         }
-    }
 
-}
+
+
+}}

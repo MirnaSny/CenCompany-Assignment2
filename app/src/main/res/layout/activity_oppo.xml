@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/any1"
     tools:context=".Oppo">
 
 
@@ -25,7 +24,7 @@
 
     <RelativeLayout
         android:id="@+id/color1"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:background="@drawable/iphone"
@@ -55,7 +54,7 @@
 
     <RelativeLayout
         android:id="@+id/color2"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:background="@drawable/iphone"
